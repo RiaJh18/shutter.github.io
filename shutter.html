@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shutter manu- with me</title>
+    <link rel="stylesheet" href="shutter.css">
+    <script src="https://kit.fontawesome.com/596334d775.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <div class="hero">
+        <div class="navbar">
+            <img src="photo/shutter-menu_img/logo.png" class="logo">
+             <img src="photo/shutter-menu_img/menu.png" class="menu" id="menuicon">
+        </div>
+        <div class="text-box">
+            <h1>Shutter Menu Design</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque fugit, fuga itaque, veritatis totam sapiente quia distinctio. <br>Please visit my website, like and subscribe also.</p>
+        </div>
+
+        <div class="row">
+            <div id="leftcol">
+                <ul>
+                    <li>Home</li>
+                    <li>ABOUT</li>
+                    <li>PRICING</li>
+                    <li>BOOKING</li>
+                    <li>CONTACT</li>
+                </ul>
+            </div>
+            <div id="rightcol">
+                <div>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-pinterest"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+
+                <img src="photo/shutter-menu_img/close.png" id="closeIcon">
+
+            </div>
+        </div>
+    </div>
+    
+
+<script>
+    var menuicon = document.getElementById("menuicon");
+    var closeIcon = document.getElementById("closeIcon");
+    var leftcol = document.getElementById("leftcol");
+    var rightcol = document.getElementById("rightcol");
+
+    menuicon.onclick = function(){
+        leftcol.style.transform = "translateX(0px)";
+        rightcol.style.transform = "translateX(0px)";
+    }
+
+    closeIcon.onclick = function(){
+        leftcol.style.transform = "translateX(-100%)";
+        rightcol.style.transform = "translateX(100%)";
+    }
+</script>
+
+
+</body>
+</html>
